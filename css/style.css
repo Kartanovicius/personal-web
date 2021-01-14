@@ -127,6 +127,27 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: 100px;
+}
+
+@media screen and (max-device-width:1024px),
+screen and (max-width:1024px) {
+    .about_me_text {
+        font-size: 96px;
+        padding: 0;
+        flex-wrap: nowrap;
+    }
+    .profile_text {
+        flex-direction: column;
+        flex: 1;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 39px;
+        color: #353A40;
+        margin-right: 50px;
+    }
 }
 
 @media screen and (max-device-width:768px),
