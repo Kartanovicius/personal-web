@@ -1,0 +1,276 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Open sans;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.t14px {
+    font-size: 14px;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.starting_screen {
+    height: 95vh;
+    background: url(../img/bg.jpg) center center/cover no-repeat;
+}
+
+.navbar {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-color: #171717;
+    color: #ffffff;
+    font-family: Open sans;
+    text-decoration: none;
+    z-index: 10;
+}
+
+.starting_flex_container {
+    height: 5vh;
+    min-height: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 55px;
+    gap: 21px;
+}
+
+.heading {
+    color: inherit;
+    padding: 100px 0 0 48px;
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: normal;
+    color: #FFFFFF;
+}
+
+.heading_container {
+    width: 485px;
+    margin: 48 auto;
+}
+
+.heading .heading_name {
+    font-size: 36px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+}
+
+.heading .heading_description {
+    font-size: 20px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+}
+
+.profile {
+    background-color: #FFFFFF;
+}
+
+.profile_flex_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_me {
+    flex-direction: column;
+    flex: 1;
+}
+
+.red_square {
+    position: relative;
+    width: 622px;
+    height: 330px;
+    left: 0px;
+    background: #E66952;
+}
+
+.about_me_text {
+    font-weight: 500;
+    font-size: 96px;
+    line-height: 120px;
+    display: flex;
+    align-items: center;
+    color: #353A40;
+    opacity: 0.9;
+    padding: 35px 244px 55px;
+}
+
+.profile_text {
+    flex-direction: column;
+    flex: 1;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 29px;
+    line-height: 39px;
+    color: #353A40;
+    padding: 81px 200px 81px 108px;
+}
+
+.timeline {
+    background-color: #292929;
+    color: #FFFFFF;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.timeline_flex_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-size: 54px;
+    line-height: 74px;
+    margin: 77px 0 44px;
+}
+
+.timeline_description {
+    font-size: 32px;
+    line-height: 44px;
+    text-align: center;
+    margin-bottom: 44px;
+}
+
+.main_timeline {
+    display: flex;
+    flex-direction: row;
+}
+
+.timeline_left {
+    text-align: right;
+    flex-direction: column;
+    width: 443px;
+    height: 157px;
+    margin: 195px 24px 0 0;
+}
+
+.timeline_right {
+    flex-direction: column;
+    width: 443px;
+    height: 157px;
+    margin: 42.5px 0 0 24px;
+}
+
+.timeline_dots {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 12px;
+    z-index: 1;
+}
+
+.red_dot {
+    background: #E66952;
+}
+
+.grey_dot {
+    background: #808080;
+}
+
+.first_dot {
+    margin-top: 50px;
+}
+
+.vtdk_dot {
+    margin-top: 131px;
+}
+
+.margin9 {
+    margin: 0 0 9px 0;
+}
+
+.timeline_year {
+    display: inline-flex;
+}
+
+.box_year {
+    text-align: center;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.red {
+    width: 68px;
+    height: 32px;
+    background: #E66952;
+}
+
+.grey {
+    width: 72px;
+    height: 32px;
+    background: #C4C4C4;
+    color: #353A40;
+}
+
+.timeline_line {
+    border: 1px solid #FFFFFF;
+    width: 1px;
+    background-color: #FFFFFF;
+    position: absolute;
+    border-radius: 12px;
+    margin-left: 9px;
+    z-index: 0;
+}
+
+.career_line {
+    height: 224.5px;
+}
+
+.education_line {
+    height: 378.5px;
+}
+
+.timeline_place_name {
+    font-weight: bolder;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.03em;
+}
+
+.empty_timeline {
+    margin-top: 0;
+}
+
+.has_start {
+    margin: 77px 0 67px 0;
+    font-size: 36px;
+    line-height: 49px;
+}
+
+.abilities {
+    background-color: #ffffff;
+}
+
+.abilities_flex_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.abi {
+    margin: 48px 0 35px 0;
+    color: 292929;
+}
