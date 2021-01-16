@@ -391,7 +391,7 @@ screen and (max-width:768px) {
     .red_square {
         left: 0px;
         width: 30vw;
-        height: 76vh;
+        height: 500px;
         background: #E66952;
     }
     .about_me_text {
@@ -434,6 +434,10 @@ screen and (max-width:682px) {
 
 @media screen and (max-device-width:500px),
 screen and (max-width:500px) {
+    .starting_screen {
+        height: 80vh;
+        padding-bottom: 80px;
+    }
     .about_me_text {
         font-size: 80px;
         transform: rotate(270deg);
@@ -509,7 +513,7 @@ screen and (max-width:375px) {
     }
     .red_square {
         width: 15vw;
-        height: 60vh;
+        height: 400px;
         margin-right: 20px;
     }
     .about_me_text {
