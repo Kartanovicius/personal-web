@@ -25,7 +25,7 @@ a {
 
 .starting_screen {
     height: 95vh;
-    background: url(../img/bg.jpg) center center/cover no-repeat;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.08)), url(../img/bg.jpg) center center/cover no-repeat;
 }
 
 .navbar {
@@ -50,6 +50,7 @@ a {
     align-items: center;
     padding-right: 55px;
     gap: 21px;
+    white-space: nowrap;
 }
 
 .heading {
@@ -62,11 +63,10 @@ a {
 }
 
 .heading_container {
-    width: 485px;
     margin: 48 auto;
 }
 
-.heading .heading_name {
+.heading_name {
     font-size: 36px;
     line-height: 36px;
     display: flex;
@@ -74,12 +74,55 @@ a {
     text-align: right;
 }
 
-.heading .heading_description {
+.heading_description {
     font-size: 20px;
     line-height: 20px;
     display: flex;
     align-items: center;
     text-align: right;
+}
+
+@media screen and (max-device-width:1024px),
+screen and (max-width:1024px) {
+    .starting_screen {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 76.56%, rgba(0, 0, 0, 0.46) 95.13%), linear-gradient(0deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.08)), url(../img/bg.jpg) center center/cover no-repeat;
+    }
+    .heading {
+        padding: 0px 0 0 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+    .heading_name {
+        font-size: 48px;
+        margin: 0 0 20px;
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        margin-top: 75vh;
+    }
+    .heading_description {
+        font-size: 20px;
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+}
+
+@media screen and (max-device-width:768px),
+screen and (max-width:768px) {
+    .heading_name {
+        font-size: 36px;
+        line-height: 25px;
+    }
+    .heading_description {
+        font-size: 20px;
+    }
 }
 
 .profile {
@@ -109,7 +152,6 @@ a {
     font-size: 120px;
     line-height: 120px;
     color: #353A40;
-    opacity: 0.9;
     font-family: Quicksand;
     display: flex;
     align-items: center;
@@ -159,18 +201,38 @@ screen and (max-width:768px) {
         white-space: nowrap;
     }
     .profile_text {
-        flex-direction: column;
-        flex: 1;
-        font-family: Open Sans;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 22px;
+        font-size: 19px;
         line-height: 39px;
         color: #353A40;
         margin-right: 30px;
     }
     br {
         display: none;
+    }
+}
+
+@media screen and (max-device-width:500px),
+screen and (max-width:500px) {
+    .about_me_text {
+        font-size: 80px;
+        transform: rotate(270deg);
+        white-space: nowrap;
+    }
+    .profile_text {
+        font-size: 18px;
+        line-height: 37px;
+    }
+}
+
+@media screen and (max-device-width:480px),
+screen and (max-width:480px) {
+    .red_square {
+        margin-right: 30px;
+    }
+    .profile_text {
+        font-size: 16px;
+        line-height: 35px;
+        margin-right: 20px;
     }
 }
 
@@ -191,8 +253,7 @@ screen and (max-width:768px) {
 
 .title {
     font-size: 54px;
-    line-height: 74px;
-    margin: 77px 0 44px;
+    padding: 77px 0 44px;
     text-align: center;
 }
 
