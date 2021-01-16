@@ -10,6 +10,10 @@ a {
     color: #ffffff;
 }
 
+h1 {
+    font-weight: normal;
+}
+
 h2 {
     font-weight: normal;
     font-size: 54px;
@@ -160,7 +164,7 @@ h5 {
 }
 
 .title {
-    padding: 77px 0 44px;
+    margin: 77px 0 44px;
     text-align: center;
 }
 
@@ -171,9 +175,15 @@ h5 {
     width: 76vw;
 }
 
-.main_timeline {
+.dekstop_timeline {
     display: flex;
     flex-direction: row;
+}
+
+.mobile_timeline {
+    display: none;
+    flex-direction: row;
+    margin-bottom: 60px;
 }
 
 .timeline_left {
@@ -257,7 +267,7 @@ h5 {
 }
 
 .education_line {
-    height: 378.5px;
+    height: 420.5px;
 }
 
 .timeline_place_name {
@@ -323,6 +333,12 @@ screen and (max-width:1024px) {
         justify-content: center;
         height: 100%;
     }
+    h4 {
+        font-size: 15px;
+    }
+    h5 {
+        font-size: 13px;
+    }
     .about_me_text {
         font-size: 100px;
     }
@@ -330,6 +346,9 @@ screen and (max-width:1024px) {
         font-size: 22px;
         line-height: 39px;
         margin-right: 50px;
+    }
+    .dekstop_timeline {
+        width: 700px;
     }
 }
 
@@ -347,6 +366,19 @@ screen and (max-width:768px) {
     }
     h5 {
         font-size: 12px;
+    }
+    .dekstop_timeline {
+        display: none;
+        flex-direction: row;
+    }
+    .mobile_timeline {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .timeline_column {
+        display: flex;
+        flex-direction: column;
     }
     .timeline_left {
         text-align: right;
@@ -383,6 +415,9 @@ screen and (max-width:768px) {
     }
     br {
         display: none;
+    }
+    .has_start {
+        font-size: 28px;
     }
 }
 
@@ -421,10 +456,19 @@ screen and (max-width:480px) {
         line-height: 32px;
         margin-right: 15px;
     }
+    .has_start {
+        font-size: 22px;
+    }
 }
 
 @media screen and (max-device-width:375px),
 screen and (max-width:375px) {
+    h2 {
+        font-size: 36px;
+    }
+    h3 {
+        font-size: 18px;
+    }
     .heading_name {
         font-size: 24px;
         line-height: 20px;
@@ -446,5 +490,8 @@ screen and (max-width:375px) {
         font-size: 14px;
         line-height: 32px;
         margin-right: 15px;
+    }
+    .has_start {
+        font-size: 20 px;
     }
 }
