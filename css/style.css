@@ -373,7 +373,7 @@ screen and (max-width:768px) {
     h5 {
         font-size: 12px;
     }
-    .starting_flex_container {
+    .navbar_flex_container {
         height: 5vh;
         min-height: 40px;
         width: 100%;
@@ -462,19 +462,6 @@ screen and (max-width:682px) {
 
 @media screen and (max-device-width:500px),
 screen and (max-width:500px) {
-    .starting_flex_container {
-        height: 5vh;
-        min-height: 40px;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: flex-end;
-        align-items: center;
-        padding-right: 55px;
-        gap: 21px;
-        white-space: nowrap;
-    }
     .starting_screen {
         height: 92vh;
         padding-bottom: 40px;
@@ -504,7 +491,6 @@ screen and (max-width:480px) {
         justify-content: flex-end;
         align-items: center;
         padding-right: 20px;
-        white-space: nowrap;
     }
     .sidenav {
         display: inline;
@@ -538,6 +524,9 @@ screen and (max-width:480px) {
         margin-left: 50px;
         padding: 0;
         height: 5vh;
+    }
+    .sidenav_items {
+        white-space: nowrap;
     }
     h1 {
         font-size: 6.5vw;
