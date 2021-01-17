@@ -708,22 +708,33 @@ p {
     width: 1040px;
     height: 524px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    column-gap: 12px;
-    row-gap: 6px;
+    row-gap: 12px;
+    column-gap: 6px;
 }
 
 .project_box {
     background-color: #ffffff;
     width: 510px;
     height: 250px;
+    padding: 20px;
 }
 
 .project_box:hover {
     background-color: #E66952;
+}
+
+.project_box_text {
+    color: #292929;
+    margin: 10px 0 0 0;
+}
+
+.project_box_main_text {
+    font-size: 40px;
+    margin: 0;
 }
 
 .learn_more {
