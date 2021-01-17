@@ -657,7 +657,7 @@ li:hover {
     background-color: #E66952;
 }
 
-a:focus {
+li:focus {
     background-color: #E66952;
 }
 
@@ -686,4 +686,9 @@ a:focus {
 p {
     margin: 22px 27px 22px 27px;
     color: #ffffff;
+}
+
+.projects {
+    margin-top: 147px;
+    background-color: #292929;
 }
