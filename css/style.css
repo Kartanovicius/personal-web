@@ -82,6 +82,10 @@ nav {
     white-space: nowrap;
 }
 
+.closebtn {
+    display: none;
+}
+
 .heading {
     color: inherit;
     padding: 100px 0 0 48px;
@@ -305,6 +309,40 @@ h1 {
     color: 292929;
 }
 
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
 @media screen and (max-device-width:1024px),
 screen and (max-width:1024px) {
     .starting_screen {
@@ -427,6 +465,14 @@ screen and (max-width:768px) {
 
 @media screen and (max-device-width:628px),
 screen and (max-width:682px) {
+    h2 {
+        font-size: 7vw;
+        margin: 50px 0 44px
+    }
+    h3 {
+        font-size: 4vw;
+        line-height: 27px;
+    }
     .profile_text {
         font-size: 3.2vw;
     }

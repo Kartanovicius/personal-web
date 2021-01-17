@@ -15,26 +15,37 @@
     <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <script type="text/javascript" src="js/navbar_button.js"></script>
+    <script type="text/javascript" src="js/navbar_side.js"></script>
     <title>Donatas Kartanovičius</title>
 </head>
 
 <body>
     <nav class="navbar">
         <div class="starting_flex_container">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a onclick="nav_scroll_profile()" class="hover_nav">About Me</a>
             <a onclick="nav_scroll_timeline()" class="hover_nav">Education / Career</a>
             <a onclick="nav_scroll_abilities()" class="hover_nav">Abilities</a>
             <a onclick="nav_scroll_timeline()" class="hover_nav">Projects</a>
         </div>
-    </nav>
+        <div id="mySidenav" class="sidenav">
+            <a onclick="closeNav()" class="closebtn">&times;</a>
+            <a onclick="nav_scroll_profile()" onclick="closeNav()">About</a>
+            <a onclick="nav_scroll_timeline()">Services</a>
+            <a onclick="nav_scroll_abilities()">Clients</a>
+            <a onclick="nav_scroll_timeline()">Contact</a>
+        </div>
 
+        <!-- Use any element to open the sidenav -->
+        <span onclick="openNav()">open</span>
+
+    </nav>
     <section class="starting_screen">
         <div class="heading">
             <div class="heading_container">
                 <h1 class="heading_name">KARTANOVIČIUS DONATAS</h1>
                 <div class="heading_description">Frontend developer / photographer</div>
             </div>
-        </div>
         </div>
     </section>
 
