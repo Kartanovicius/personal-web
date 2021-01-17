@@ -58,7 +58,7 @@ nav {
     color: #ffffff;
     font-family: Open sans;
     text-decoration: none;
-    z-index: 10;
+    z-index: 2;
 }
 
 .hover_nav:hover {
@@ -68,7 +68,7 @@ nav {
     margin: -4px;
 }
 
-.starting_flex_container {
+.navbar_flex_container {
     height: 5vh;
     min-height: 40px;
     width: 100%;
@@ -82,7 +82,11 @@ nav {
     white-space: nowrap;
 }
 
-.closebtn {
+.sidenav {
+    display: none;
+}
+
+.navbar>span {
     display: none;
 }
 
@@ -309,40 +313,6 @@ h1 {
     color: 292929;
 }
 
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    padding-top: 60px;
-    transition: 0.5s;
-}
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidenav a:hover {
-    color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
 @media screen and (max-device-width:1024px),
 screen and (max-width:1024px) {
     .starting_screen {
@@ -499,7 +469,7 @@ screen and (max-width:500px) {
         background-color: #171717;
         font-family: Open sans;
         text-decoration: none;
-        z-index: 10;
+        z-index: 2;
     }
     .hover_nav:hover {
         background-color: #E66952;
@@ -533,6 +503,58 @@ screen and (max-width:500px) {
 
 @media screen and (max-device-width:480px),
 screen and (max-width:480px) {
+    .navbar_flex_container {
+        display: none;
+    }
+    .navbar>a {
+        font-size: 36px;
+        height: 49px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 20px;
+        white-space: nowrap;
+    }
+    .sidenav {
+        display: inline;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        right: 0;
+        background-color: #292929;
+        overflow-x: hidden;
+        padding-top: 60px;
+        transition: 0.5s;
+    }
+    .sidenav a {
+        padding: 22px 0 22px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 20px;
+        font-size: 36px;
+        margin-left: 50px;
+        padding: 0;
+        height: 5vh;
+    }
     h1 {
         font-size: 6.5vw;
         margin-bottom: 15px;
