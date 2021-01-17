@@ -476,8 +476,8 @@ screen and (max-width:500px) {
         white-space: nowrap;
     }
     .starting_screen {
-        height: 82vh;
-        padding-bottom: 80px;
+        height: 92vh;
+        padding-bottom: 40px;
     }
     .about_me_text {
         font-size: 80px;
