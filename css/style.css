@@ -86,6 +86,10 @@ nav {
     display: none;
 }
 
+.show {
+    display: none;
+}
+
 .heading {
     color: inherit;
     padding: 100px 0 0 48px;
@@ -431,6 +435,9 @@ screen and (max-width:768px) {
 
 @media screen and (max-device-width:628px),
 screen and (max-width:682px) {
+    .show {
+        display: block;
+    }
     .navbar_flex_container {
         display: none;
     }
