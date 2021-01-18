@@ -91,6 +91,91 @@ nav {
     display: none;
 }
 
+@media screen and (max-device-width:768px),
+screen and (max-width:768px) {
+    .navbar_flex_container {
+        height: 5vh;
+        min-height: 40px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 55px 0 55px;
+        white-space: nowrap;
+    }
+}
+
+@media screen and (max-device-width:480px),
+screen and (max-width:480px) {
+    .show {
+        display: flex;
+    }
+    .navbar_flex_container {
+        display: none;
+    }
+    nav>a {
+        font-size: 36px;
+        height: 49px;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 20px;
+    }
+    .sidenav {
+        display: inline;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        right: 0;
+        background-color: #292929;
+        overflow-x: hidden;
+        padding-top: 60px;
+        transition: 0.5s;
+    }
+    .sidenav a {
+        padding: 22px 0 22px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        text-decoration: none;
+        font-size: 25px;
+        color: #e9e9e9;
+        display: block;
+    }
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 20px;
+        font-size: 36px;
+        margin-left: 50px;
+        padding: 0;
+        height: 5vh;
+    }
+    .sidenav_items {
+        white-space: nowrap;
+    }
+    .footer_dekstop {
+        display: none;
+    }
+    .footer_mobile {
+        position: absolute;
+        bottom: 20px;
+    }
+    h6 {
+        text-align: center;
+    }
+    .media_icons {
+        filter: invert(77%) sepia(95%) saturate(0%) hue-rotate(192deg) brightness(93%) contrast(100%);
+    }
+}
+
 .heading {
     color: inherit;
     padding: 100px 0 0 48px;
@@ -169,6 +254,96 @@ h1 {
     align-items: center;
     justify-content: center;
     margin-right: 80px;
+}
+
+@media screen and (max-device-width:1024px),
+screen and (max-width:1024px) {
+    .about_me_text {
+        font-size: 100px;
+    }
+    .profile_text {
+        font-size: 2.5vw;
+        line-height: 39px;
+        margin-right: 50px;
+    }
+}
+
+@media screen and (max-device-width:768px),
+screen and (max-width:768px) {
+    .red_square {
+        left: 0px;
+        width: 30vw;
+        height: 95vh;
+        background: #E66952;
+    }
+    .about_me_text {
+        font-size: 90px;
+        transform: rotate(270deg);
+        white-space: nowrap;
+    }
+    .profile_text {
+        font-size: 3vw;
+        line-height: 39px;
+        color: #353A40;
+        margin-right: 30px;
+    }
+}
+
+@media screen and (max-device-width:628px),
+screen and (max-width:682px) {
+    .profile_text {
+        font-size: 3.2vw;
+    }
+}
+
+@media screen and (max-device-width:500px),
+screen and (max-width:500px) {
+    .about_me_text {
+        font-size: 80px;
+        transform: rotate(270deg);
+        white-space: nowrap;
+    }
+}
+
+@media screen and (max-device-width:480px),
+screen and (max-width:480px) {
+    .red_square {
+        width: 20vw;
+        margin-right: 20px;
+    }
+    .about_me_text {
+        font-size: 50px;
+    }
+    .profile_text {
+        font-size: 4vw;
+        line-height: 40px;
+        margin-right: 15px;
+    }
+}
+
+@media screen and (max-device-width:375px),
+screen and (max-width:375px) {
+    .red_square {
+        width: 15vw;
+        height: 400px;
+        margin-right: 20px;
+    }
+    .about_me_text {
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .profile_text {
+        font-size: 4.2vw;
+        line-height: 32px;
+        margin-right: 15px;
+    }
+}
+
+@media screen and (max-device-width:331px),
+screen and (max-width:331px) {
+    .profile_text {
+        font-size: 4.5vw;
+    }
 }
 
 .timeline {
@@ -334,14 +509,6 @@ screen and (max-width:1024px) {
     h5 {
         font-size: 13px;
     }
-    .about_me_text {
-        font-size: 100px;
-    }
-    .profile_text {
-        font-size: 2.5vw;
-        line-height: 39px;
-        margin-right: 50px;
-    }
     .dekstop_timeline {
         width: 700px;
     }
@@ -357,18 +524,6 @@ screen and (max-width:768px) {
     }
     h5 {
         font-size: 12px;
-    }
-    .navbar_flex_container {
-        height: 5vh;
-        min-height: 40px;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 55px 0 55px;
-        white-space: nowrap;
     }
     .dekstop_timeline {
         justify-content: center;
@@ -393,24 +548,7 @@ screen and (max-width:768px) {
     .empty_timeline {
         margin: 0;
     }
-    .red_square {
-        left: 0px;
-        width: 30vw;
-        height: 95vh;
-        background: #E66952;
-    }
-    .about_me_text {
-        font-size: 90px;
-        transform: rotate(270deg);
-        white-space: nowrap;
-    }
-    .profile_text {
-        font-size: 3vw;
-        line-height: 39px;
-        color: #353A40;
-        margin-right: 30px;
-    }
-    br {
+    .about_me_text br {
         display: none;
     }
     .has_start {
@@ -427,9 +565,6 @@ screen and (max-width:682px) {
     h3 {
         font-size: 4vw;
         line-height: 27px;
-    }
-    .profile_text {
-        font-size: 3.2vw;
     }
     .dekstop_timeline {
         display: none;
@@ -451,67 +586,10 @@ screen and (max-width:500px) {
         height: 92vh;
         padding-bottom: 40px;
     }
-    .about_me_text {
-        font-size: 80px;
-        transform: rotate(270deg);
-        white-space: nowrap;
-    }
 }
 
 @media screen and (max-device-width:480px),
 screen and (max-width:480px) {
-    .show {
-        display: flex;
-    }
-    .navbar_flex_container {
-        display: none;
-    }
-    nav>a {
-        font-size: 36px;
-        height: 49px;
-        width: 100%;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: flex-end;
-        align-items: center;
-        padding-right: 20px;
-    }
-    .sidenav {
-        display: inline;
-        height: 100%;
-        width: 0;
-        position: fixed;
-        z-index: 2;
-        top: 0;
-        right: 0;
-        background-color: #292929;
-        overflow-x: hidden;
-        padding-top: 60px;
-        transition: 0.5s;
-    }
-    .sidenav a {
-        padding: 22px 0 22px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        text-align: center;
-        text-decoration: none;
-        font-size: 25px;
-        color: #e9e9e9;
-        display: block;
-    }
-    .sidenav .closebtn {
-        position: absolute;
-        top: 0;
-        right: 20px;
-        font-size: 36px;
-        margin-left: 50px;
-        padding: 0;
-        height: 5vh;
-    }
-    .sidenav_items {
-        white-space: nowrap;
-    }
     h1 {
         font-size: 6.5vw;
         margin-bottom: 15px;
@@ -539,18 +617,6 @@ screen and (max-width:480px) {
     .education_line {
         height: 400.5px;
     }
-    .red_square {
-        width: 20vw;
-        margin-right: 20px;
-    }
-    .about_me_text {
-        font-size: 50px;
-    }
-    .profile_text {
-        font-size: 4vw;
-        line-height: 40px;
-        margin-right: 15px;
-    }
     .has_start {
         font-size: 18px;
         margin: 40px 0 40px 0;
@@ -576,20 +642,6 @@ screen and (max-width:375px) {
         margin-bottom: 40px;
         width: 76vw;
     }
-    .red_square {
-        width: 15vw;
-        height: 400px;
-        margin-right: 20px;
-    }
-    .about_me_text {
-        font-size: 30px;
-        font-weight: 600;
-    }
-    .profile_text {
-        font-size: 4.2vw;
-        line-height: 32px;
-        margin-right: 15px;
-    }
     .has_start {
         font-size: 20 px;
     }
@@ -602,9 +654,6 @@ screen and (max-width:331px) {
     }
     h5 {
         font-size: 10px;
-    }
-    .profile_text {
-        font-size: 4.5vw;
     }
     .timeline_right {
         flex-direction: column;
@@ -801,7 +850,7 @@ screen and (max-width: 1024px) {
 @media screen and (max-device-width: 768px),
 screen and (max-width: 768px) {
     .project_box_container {
-        width: 768px;
+        width: 95vw;
         height: fit-content;
         gap: 10px;
     }
