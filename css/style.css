@@ -164,16 +164,6 @@ screen and (max-width:480px) {
     .footer_dekstop {
         display: none;
     }
-    .footer_mobile {
-        position: absolute;
-        bottom: 20px;
-    }
-    h6 {
-        text-align: center;
-    }
-    .media_icons {
-        filter: invert(77%) sepia(95%) saturate(0%) hue-rotate(192deg) brightness(93%) contrast(100%);
-    }
 }
 
 .heading {
@@ -917,5 +907,22 @@ screen and (max-width: 768px) {
         align-items: center;
         justify-content: space-around;
         gap: 10px;
+    }
+}
+
+@media screen and (max-device-width:480px),
+screen and (max-width:480px) {
+    .footer_mobile {
+        position: absolute;
+        bottom: 20px;
+    }
+    h6 {
+        text-align: center;
+    }
+    .media_icons {
+        filter: invert(77%) sepia(95%) saturate(0%) hue-rotate(192deg) brightness(93%) contrast(100%);
+    }
+    .social_media {
+        gap: 20px;
     }
 }
