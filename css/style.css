@@ -133,7 +133,7 @@ screen and (max-width:480px) {
         z-index: 2;
         top: 0;
         right: 0;
-        background-color: #292929;
+        background-color: #171717;
         overflow-x: hidden;
         padding-top: 60px;
         transition: 0.5s;
@@ -204,18 +204,19 @@ h1 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-}
-
-.about_me {
-    flex-direction: column;
+    width: 100vw;
+    height: 750px;
 }
 
 .red_square {
-    width: 41vw;
-    height: 88vh;
+    width: 100%;
+    height: 100%;
     min-height: -webkit-fill-available;
     background: #E66952;
-    margin-right: 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .about_me_text {
@@ -224,15 +225,10 @@ h1 {
     line-height: 120px;
     color: #353A40;
     font-family: Quicksand;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
 }
 
 .profile_text {
     flex-direction: column;
-    flex: 1;
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
@@ -240,10 +236,11 @@ h1 {
     line-height: 45px;
     color: #353A40;
     height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 80px;
+    margin: 0 80px 0 50px;
 }
 
 @media screen and (max-device-width:1024px),
@@ -254,7 +251,7 @@ screen and (max-width:1024px) {
     .profile_text {
         font-size: 2.5vw;
         line-height: 39px;
-        margin-right: 50px;
+        margin: 0 50px 0 50px;
     }
 }
 
@@ -263,10 +260,10 @@ screen and (max-width:768px) {
     .red_square {
         left: 0px;
         width: 30vw;
-        height: 95vh;
-        background: #E66952;
+        height: 100%;
     }
     .about_me_text {
+        display: inline-block;
         font-size: 90px;
         transform: rotate(270deg);
         white-space: nowrap;
@@ -275,7 +272,7 @@ screen and (max-width:768px) {
         font-size: 3vw;
         line-height: 39px;
         color: #353A40;
-        margin-right: 30px;
+        margin: 0 30px 0 50px;
     }
 }
 
@@ -290,8 +287,6 @@ screen and (max-width:682px) {
 screen and (max-width:500px) {
     .about_me_text {
         font-size: 80px;
-        transform: rotate(270deg);
-        white-space: nowrap;
     }
 }
 
@@ -299,15 +294,14 @@ screen and (max-width:500px) {
 screen and (max-width:480px) {
     .red_square {
         width: 20vw;
-        margin-right: 20px;
     }
     .about_me_text {
         font-size: 50px;
     }
     .profile_text {
         font-size: 4vw;
-        line-height: 40px;
-        margin-right: 15px;
+        line-height: 230%;
+        margin: 0 20px 0 20px;
     }
 }
 
@@ -315,8 +309,8 @@ screen and (max-width:480px) {
 screen and (max-width:375px) {
     .red_square {
         width: 15vw;
+        min-width: 50px;
         height: 400px;
-        margin-right: 20px;
     }
     .about_me_text {
         font-size: 30px;
@@ -324,8 +318,8 @@ screen and (max-width:375px) {
     }
     .profile_text {
         font-size: 4.2vw;
-        line-height: 32px;
-        margin-right: 15px;
+        line-height: 200%;
+        margin: 0 20px 0 15px;
     }
 }
 
@@ -500,7 +494,7 @@ screen and (max-width:1024px) {
         font-size: 13px;
     }
     .dekstop_timeline {
-        width: 700px;
+        width: 100%;
     }
 }
 
@@ -730,7 +724,7 @@ p {
 @media screen and (max-device-width: 768px),
 screen and (max-width: 768px) {
     .textbox {
-        width: 470px;
+        width: ;
         height: 361px;
         margin: 0 0 0 10px;
     }
@@ -761,9 +755,9 @@ screen and (max-width: 722px) {
         margin: 4px 0 10px;
     }
     .textbox {
-        width: 80vw;
+        width: 90%;
         height: 361px;
-        margin: 0 0 0 0;
+        margin: 0;
     }
 }
 
@@ -832,17 +826,22 @@ screen and (max-width: 1024px) {
         flex-wrap: wrap;
     }
     .project_box {
-        width: 365px;
-        height: 250px;
+        width: 49%;
+        height: 49%;
     }
 }
 
 @media screen and (max-device-width: 768px),
 screen and (max-width: 768px) {
     .project_box_container {
-        width: 95vw;
+        width: 100vw;
+        padding: 30px;
         height: fit-content;
         gap: 10px;
+    }
+    .project_box {
+        width: 100%;
+        height: 50%;
     }
 }
 
