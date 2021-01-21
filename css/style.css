@@ -724,7 +724,6 @@ p {
 @media screen and (max-device-width: 768px),
 screen and (max-width: 768px) {
     .textbox {
-        width: ;
         height: 361px;
         margin: 0 0 0 10px;
     }
@@ -837,7 +836,6 @@ screen and (max-width: 768px) {
         width: 100vw;
         padding: 30px;
         height: fit-content;
-        justify-content: start;
         gap: 10px;
     }
     .project_box {
