@@ -204,7 +204,6 @@ h1 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 100vw;
     height: 750px;
 }
 
@@ -779,7 +778,7 @@ screen and (max-width: 722px) {
 
 .project_box_container {
     width: 1000px;
-    height: 510px;
+    height: 520px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
