@@ -674,29 +674,37 @@ screen and (max-width:331px) {
 
 ul {
     list-style-type: none;
+}
+
+button {
+    border: none;
+    outline: none;
+    border-radius: 0;
+}
+
+.list {
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
     line-height: 33px;
-}
-
-li {
-    padding-top: 4px;
-    margin-bottom: 4px;
+    margin: 4px 0 4px 0;
     width: 156px;
     height: 43px;
     display: block;
     line-height: normal;
     text-align: center;
     cursor: pointer;
+    border: 0;
+    color: #292929;
+    background-color: #ffffff;
 }
 
-li:hover {
+.list:hover {
     background-color: #E66952;
 }
 
-li:focus {
+.list:focus {
     background-color: #E66952;
 }
 
@@ -739,7 +747,7 @@ screen and (max-width: 722px) {
     ul {
         font-size: 3.7vw;
     }
-    li {
+    .list {
         display: inline;
         margin: 0 1vw 0 1vw;
         padding: 4px 8px 4px 8px;
@@ -832,7 +840,7 @@ screen and (max-width: 1024px) {
 @media screen and (max-device-width: 768px),
 screen and (max-width: 768px) {
     .project_box_container {
-        width: 100vw;
+        width: 100%;
         padding: 30px;
         height: fit-content;
         gap: 10px;
@@ -903,6 +911,9 @@ screen and (max-width: 768px) {
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
+    }
+    .social_media {
+        margin: 10px 0;
     }
 }
 

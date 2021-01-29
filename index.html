@@ -172,15 +172,18 @@
             <h2 class="abi">Abilities</h2>
             <div class="main_abilities">
                 <ul>
-                    <li>HTML/CSS</li>
-                    <li>JavaScript</li>
-                    <li>Java</li>
-                    <li>C#</li>
+                    <li> <button class="list" onclick="abilities_html()">HTML/CSS</button>
+                    </li>
+                    <li> <button class="list" onclick="abilities_js()">JavaScript</button>
+                    </li>
+                    <li> <button class="list" onclick="abilities_java()">Java</button>
+                    </li>
+                    <li> <button class="list" onclick="abilities_csharp()">C#</button>
+                    </li>
                 </ul>
                 <div class="line abilities_line"></div>
                 <div class="textbox">
-                    <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound
-                        to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. </p>
+                    <p id="textbox_text"></p>
                 </div>
             </div>
         </div>
@@ -226,5 +229,6 @@
 
 <script type="text/javascript" src="js/navbar_button.js"></script>
 <script type="text/javascript" src="js/navbar_side.js"></script>
+<script type="text/javascript" src="js/abilities_switch.js"></script>
 
 </html>
