@@ -1,8 +1,8 @@
 {
     "name": "Donatas K.",
     "short_name": "Donatas Kartanovičius",
-    "start_url": "../index.html",
-    "scope": "../index.html",
+    "start_url": "../personal-web/index.html",
+    "scope": "../personal-web/index.html",
     "icons": [{
         "src": "icons/android-chrome-192x192.png",
         "sizes": "192x192",
