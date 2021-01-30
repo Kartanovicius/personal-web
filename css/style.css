@@ -390,6 +390,10 @@ screen and (max-width:331px) {
     margin-top: 50px;
 }
 
+.first_alone_dot {
+    margin: 50px 0 0 0;
+}
+
 .vtdk_dot {
     margin-top: 131px;
 }
