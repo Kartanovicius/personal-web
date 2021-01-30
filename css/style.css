@@ -730,11 +730,11 @@ button {
     background-color: #ffffff;
 }
 
-.list:hover {
+li button:hover:not(.active) {
     background-color: #E66952;
 }
 
-.list:focus {
+.active_ability {
     background-color: #E66952;
 }
 

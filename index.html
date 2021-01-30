@@ -17,6 +17,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
     <link rel="manifest" href="manifest.webmanifest">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
+    </script>
 
     <title>Donatas Kartanovičius</title>
 </head>
@@ -133,13 +135,18 @@
             <h2 class="abi">Abilities</h2>
             <div class="main_abilities">
                 <ul>
-                    <li> <button class="list" onclick="abilities_html()">HTML/CSS</button>
+                    <script>
+                        $(document).ready(function() {
+                            $(".active_ability").trigger("click");
+                        });
+                    </script>
+                    <li> <button class="list active_ability" onclick="bg_color();abilities_html();">HTML/CSS</button>
                     </li>
-                    <li> <button class="list" onclick="abilities_js()">JavaScript</button>
+                    <li> <button class="list" onclick="bg_color();abilities_js();">JavaScript</button>
                     </li>
-                    <li> <button class="list" onclick="abilities_java()">Java</button>
+                    <li> <button class="list" onclick="abilities_java();bg_color();">Java</button>
                     </li>
-                    <li> <button class="list" onclick="abilities_csharp()">C#</button>
+                    <li> <button class="list" onclick="abilities_csharp();bg_color();">C#</button>
                     </li>
                 </ul>
                 <div class="line abilities_line"></div>
