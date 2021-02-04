@@ -109,6 +109,9 @@ screen and (max-width:768px) {
 
 @media screen and (max-device-width:480px),
 screen and (max-width:480px) {
+    .heading_container {
+        margin: 0 0 50px;
+    }
     .show {
         display: flex;
     }
@@ -596,14 +599,6 @@ screen and (max-width:682px) {
     .career_line {
         margin-top: 35px;
         height: 170px;
-    }
-}
-
-@media screen and (max-device-width:500px),
-screen and (max-width:500px) {
-    .starting_screen {
-        height: 92vh;
-        padding-bottom: 40px;
     }
 }
 
